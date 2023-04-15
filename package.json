@@ -4,9 +4,12 @@
   "description": "STADVDB MCO2 2023",
   "main": "src/app.js",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
