@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <h1>Transaction App Manager</h1>
-    </head>
-    <body>
-            <p>Test</p>
-    </body>
+<head>
+    <title>Transaction App Manager - Delete Record</title>
+</head>
+<body>
+    <h1>Transaction App Manager</h1>
+    <h2>Delete a Record</h2>
+    <form id="delete" method="post" action="/delete">
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" name="movie_id" id="movie_id" class="field" placeholder="Enter movie_id" required> <br>
+        
+
+        <br>
+        <input type="submit" id="submit" value="DELETE">
+    </form>
+    <script src="/js/delete.js"></script>
+</body>
 </html>

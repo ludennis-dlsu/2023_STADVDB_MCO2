@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <h1>Transaction App Manager</h1>
-    </head>
-    <body>
-            <p>Test</p>
-    </body>
+<head>
+    <title>Transaction App Manager - Update Record</title>
+</head>
+<body>
+    <h1>Transaction App Manager</h1>
+    <h2>Update a Record</h2>
+    <form id="update" method="post" action="/update">
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" name="movie_id" id="movie_id" class="field" placeholder="Enter movie_id" required> <br>
+        <label for="movie_title">Movie Title:</label>
+        <input type="text" name="movie_title" id="movie_title" class="field" placeholder="Enter movie_title" required> <br>
+        <!-- Add other input fields for other data to be updated -->
+
+        <br>
+        <input type="submit" id="submit" value="UPDATE">
+    </form>
+    <script src="/js/update.js"></script>
+</body>
 </html>

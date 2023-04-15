@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <h1>Transaction App Manager</h1>
-    </head>
-    <body>
-            <p>Test</p>
-    </body>
+<head>
+    <title>Transaction App Manager - Read Record</title>
+</head>
+<body>
+    <h1>Transaction App Manager</h1>
+    <h2>Read a Record</h2>
+   
+    <% for (const record of records) { %>
+        <p>Movie ID: <%= record.movie_id %></p>
+        <p>Movie Title: <%= record.movie_title %></p>
+        <!-- other fields to be added -->
+        <hr>
+    <% } %>
+    <script src="/js/read.js"></script>
+</body>
 </html>
