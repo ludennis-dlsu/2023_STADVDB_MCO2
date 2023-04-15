@@ -1,3 +1,10 @@
-# 2023_STADVDB_MCO2
-Simple test commit
-test push
+# STADVDB MCO2
+
+#### Stack
+- NodeJS 
+- Express
+- MYSQL Database
+
+#### Instructions
+1. npm install
+2. npm run dev for nodemon
