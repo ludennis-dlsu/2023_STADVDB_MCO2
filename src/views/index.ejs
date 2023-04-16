@@ -2,6 +2,7 @@
 <html>
     <head>
         <h1>Transaction App Manager</h1>
+        <script type="text/javascript" src="../db1.js"></script>
     </head>
     <body>
         <h2>CRUD operations:</h2>
@@ -9,5 +10,16 @@
         <a href="read.html"><p>Read Record</p></a>
         <a href="update.html"><p>Update Record</p></a>
         <a href="delete.html"><p>Delete Record</p></a>
+        <button id="connect-btn" onclick="connect()">Connect</button>
+        <p id="result"></p>
+        <script>
+            import {start} from "../db1.js" 
+
+            function connect(){
+                var output = document.getElementById('result');
+                output.innerHTML = 'Clicked';
+                start();
+            }
+        </script>
     </body>
 </html>
