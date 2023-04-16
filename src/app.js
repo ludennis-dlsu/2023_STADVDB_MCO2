@@ -14,9 +14,10 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 // Listen to Port
 app.listen(port, () => {
-    console.log('App listening at port ' + port);
+    (!process.env.PORT) ? 
+        console.log('App ready at http://localhost:' + port) 
+    : console.log('App ready at port ' + port);
 });
-
 
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
