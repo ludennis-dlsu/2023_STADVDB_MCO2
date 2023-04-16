@@ -6,7 +6,6 @@ Transaction Management Simulation Project for STADVDB
 #### Stack
 - NodeJS 
 - Express
-- Jest
 - MYSQL Database
 
 #### Instructions
