@@ -3,7 +3,7 @@ const mysql = require('mysql')
 
 try{
     const db = mysql.createConnection({
-        host: '34.126.135.130', 
+        host: '34.124.177.25', 
         user: 'root',
         password: 'Stadvdb00',
         database: 'test',
@@ -14,13 +14,13 @@ try{
         if(err) {
             throw err;
         }
-        console.log('Connected to database 1 with host 34.126.135.130');
+        console.log('Connected to database 1 with host 34.124.177.25');
     });
 
     let sql = `
-    SELECT     distinct mb.movie_id as movie_id, mb.movie_name as movie_name, mb.movie_year as movie_year
-    FROM     movies_before_1980 mb
-    WHERE     mb.index = 70;
+    SELECT     distinct ma.movie_id as movie_id, ma.movie_name as movie_name, ma.movie_year as movie_year
+    FROM     movies_after_1980 ma
+    WHERE     ma.index = 1993;
     `
 
     // db.beginTransaction();
@@ -40,7 +40,7 @@ try{
 
 try{
     const db = mysql.createConnection({
-        host: '34.97.233.55', 
+        host: '34.97.103.52', 
         user: 'root',
         password: 'Stadvdb00',
         database: 'test',
@@ -51,13 +51,13 @@ try{
         if(err) {
             throw err;
         }
-        console.log('Connected to database 1 with host 34.97.233.55');
+        console.log('Connected to database 1 with host 34.97.103.52');
     });
 
     let sql = `
-    SELECT     distinct mb.movie_id as movie_id, mb.movie_name as movie_name, mb.movie_year as movie_year
-    FROM     movies_before_1980 mb
-    WHERE     mb.index = 70;
+    SELECT     distinct ma.movie_id as movie_id, ma.movie_name as movie_name, ma.movie_year as movie_year
+    FROM     movies_after_1980 ma
+    WHERE     ma.index = 1993;
     `
 
     // db.beginTransaction();

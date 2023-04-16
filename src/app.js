@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const db1 = require('./db1');
-const db2 = require('./db2');
+// const db2 = require('./db2');
 
 // secrets
 require('dotenv').config();
